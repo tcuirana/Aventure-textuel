@@ -21,6 +21,28 @@ int main()
 		break;
 	}
 
+	if (classChoice == 1)
+	{
+		//Warrior Stats
+		int hp = 200;
+		int atk = 30;
+		int dfs = 15;
+	}
+	else if (classChoice == 2)
+	{
+		//Wizard Stats
+		int hp = 120;
+		int atk = 5;
+		int dfs = 5;
+	}
+	else if (classChoice == 3)
+	{
+		//Bowman Stats
+		int hp = 120;
+		int atk = 5;
+		int dfs = 5;
+	}
+
 
 
 	return 0;
