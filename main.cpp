@@ -4,6 +4,7 @@ int main()
 {
 	std::cout << "Bienvenue dans le donjon !" << std::endl;
 
+	//Choose a class
 	int classChoice;
 	std::cout << "Choisir une classe : Guerrier(1), Mage(2), Archer(3)";
 	std::cin >> classChoice;
@@ -21,6 +22,7 @@ int main()
 		break;
 	}
 
+	//Stats Initialization
 	if (classChoice == 1)
 	{
 		//Warrior Stats
