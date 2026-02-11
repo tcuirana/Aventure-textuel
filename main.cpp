@@ -68,6 +68,7 @@ int main()
 
 	if (actionChoice == 1)
 	{
+		//Attack
 		int dmg = atk - gobDfs;
 		
 			if (dmg < 1)
@@ -78,8 +79,9 @@ int main()
 		gobHp -= dmg;
 		goblin.DisplayStats();
 	}
-	else if (actionChoice == 2 )
+	else if (actionChoice == 2 && hp < 200)
 	{
+		//Healing
 		if (hp <= 150 || hp == 150)
 		{
 			hp += 50;
@@ -98,7 +100,7 @@ int main()
 	std::cout << "Le goblin vous attaque !" << std::endl << std::endl;
 	int gobDmg = gobAtk - dfs;
 
-	adventurer.m_Hp -= gobDmg; //Set + Get 
+	hp = gobDmg - adventurer.GetHp(); //Set + Get 
 
 	adventurer.DisplayStats();
 

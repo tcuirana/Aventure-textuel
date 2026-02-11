@@ -16,3 +16,18 @@ void Entity::DisplayStats()
 	std::cout << "Atk : " << m_Atk << std::endl;
 	std::cout << "Dfs : " << m_Dfs << std::endl << std::endl;
 }
+
+int Entity::GetHp()
+{
+	return m_Hp;
+}
+
+int Entity::GetAtk()
+{
+	return m_Atk;
+}
+
+int Entity::GetDfs()
+{
+	return m_Dfs;
+}
